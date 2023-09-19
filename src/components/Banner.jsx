@@ -55,7 +55,7 @@ export const Banner = () => {
                         <TrackVisibility>
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                                    <h1 className="tagline">Mi portafolio </h1>
+                                    <h1 className="tagline">MI PORTAFOLIO EN GRANDE 1 </h1>
                                     <h2>{`Mi nombre es Andres Rojo soy `} <span className="txt-rotate" dataperiod="1000" data-rotate='[ "desarrollador web", "desarrollador de software"]'><span className="wrap">{text}</span></span></h2>
                                     <div className="QuiensOy">
                                         <p>Soy un ingeniero recién graduado en desarrollo y gestión de software con habilidades en Java, JavaScript y frameworks como ReactJS y Angular. También tengo experiencia en el diseño y manejo de bases de datos.</p>
