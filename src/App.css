@@ -124,7 +124,7 @@ span.navbar-text {
 .social-icon2{
   position: relative;
  
-  width: 25rem;
+  width:auto;
   display: flex;
   
   flex-direction: column;
@@ -460,6 +460,24 @@ color: white;
   text-align: center;
   z-index: 0;
 }
+.btn_proy{
+  background:#fca311 ;
+  width: 5rem;
+  display: block;
+}
+.btnmas{
+  position: absolute;
+  right: 9rem;
+}
+.btn_proy:hover{
+  background:#fca2117c ;
+}
+.botones_proy{
+  
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 .project .nav.nav-pills .nav-link::before {
     content: "";
     position: absolute;
@@ -702,4 +720,41 @@ color: white;
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+a:hover  + .texto{
+  background-image: linear-gradient(to right, #0077B5, #00A0DC);
+  -webkit-background-clip: text; /* Hacer que el gradiente afecte al texto */
+  background-clip: text;
+  color: transparent; 
+  width: 8rem;
+  transition:  color  2s ease-in-out;
+  transform: scale(1.1);
+}
+
+a:hover  + .gti{
+  background-image: linear-gradient(to right, #000000, #eff0f1);
+  -webkit-background-clip: text; /* Hacer que el gradiente afecte al texto */
+  background-clip: text;
+  color: transparent; 
+  width: 8rem;
+  transition:  color  2s ease-in-out;
+  transform: scale(1.1);
+}
+a:hover  + .tel{
+  background-image: linear-gradient(to right, #ae0101, #eff0f1);
+  -webkit-background-clip: text; /* Hacer que el gradiente afecte al texto */
+  background-clip: text;
+  color: transparent; 
+  width: 8rem;
+  transition:  color  2s ease-in-out;
+  transform: scale(1.1);
+}
+a:hover  + .gmail{
+  background-image: linear-gradient(to right, #fbbc05, #ea4335);
+  -webkit-background-clip: text; /* Hacer que el gradiente afecte al texto */
+  background-clip: text;
+  color: transparent; 
+  width:auto;
+  transition:  color  2s ease-in-out;
+ 
 }

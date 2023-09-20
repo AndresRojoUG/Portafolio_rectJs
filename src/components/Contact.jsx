@@ -33,25 +33,25 @@ export const Contact = () => {
                 <Row size={12} md={6}>
                 <a  onClick={()=>{
                   window.open('https://www.linkedin.com/in/andres-rojo-ugalde-195070207/',"_blank")
-                }} ><img src={navIcon1} alt="" /> </a> 
-               <h3>Linkedin</h3>
+                }} ><img className='linked' src={navIcon1} alt="" /> </a> 
+               <h3 className='texto'>Linkedin</h3>
 
                 </Row>
                 <Row size={12} md={6}>
                 <a onClick={()=>{
                   window.open('https://github.com/AndresRojoUG',"_blank")
                 }}><img src={navIcon2} alt="" /></a>
-                   <h3>GitHub</h3>
+                   <h3 className='gti'>GitHub</h3>
                 </Row>
 
                 <Row size={12} md={6}>
                 <a><img src={navIcontel} alt="" /></a>
-                   <h3>(414)-121-5255</h3>
+                   <h3 className='tel'>(414)-121-5255</h3>
                 </Row>
 
                 <Row size={12} md={6}>
                 <a href="mailto:andresru.ti19@utsjr.edu.mx"><img src={navIconemail} alt="" /></a>
-                   <h3>andresru.ti19@utsjr.edu.mx</h3>
+                   <h3 className='gmail'>andresru.ti19@utsjr.edu.mx</h3>
                 </Row>
           
                 

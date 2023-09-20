@@ -7,6 +7,7 @@ import projImg4 from "../assets/img/seguidorGastos.png";
 import projImg5 from "../assets/img/PaginaTarea1.png";
 import projImg6 from "../assets/img/tareasPagina2.png";
 import projImg7 from "../assets/img/havc.png";
+import ReactHook from "../assets/img/ReactHookForms.PNG";
 import projImg8 from "../assets/img/portafolio.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
@@ -15,12 +16,50 @@ import { useEffect, useState } from "react";
 
 export const Projects = () => {
   const [urlActual,setUrl]=useState()
+  const [projectoInicio,setProjectoInicio]=useState(0)
+  const [projectoMostrar,setProjectoMostrar]=useState(6)
   
 
 useEffect(()=>{
   setUrl(window.location.href)
-  console.log(urlActual)
+  
 })
+
+useEffect(()=>{
+
+  if(projectoInicio<=0){
+    const btn=document.querySelector(".btnmenos")
+    btn.style.display="none"
+   
+  }else{
+    const btn=document.querySelector(".btnmenos")
+    btn.style.display="block"
+  }
+  
+  if(projectoMostrar>=projects.length){
+    const btnmas=document.querySelector(".btnmas")
+    btnmas.style.display="none"
+  }else{
+    const btnmas=document.querySelector(".btnmas")
+    btnmas.style.display="block"
+  }
+
+},[projectoInicio,projectoMostrar])
+
+const mostrarSiguientesProyectos = () => {
+  
+    setProjectoInicio(projectoInicio + 6);
+    setProjectoMostrar(projectoMostrar + 6);
+
+};
+
+const mostrarProyectosAnteriores = () => {
+  
+    setProjectoInicio(projectoInicio - 6);
+    setProjectoMostrar(projectoMostrar - 6);
+  
+};
+
 
   const projects = [
     {
@@ -52,6 +91,12 @@ useEffect(()=>{
       description: "Desarrollo de portafolio en React",
       imgUrl: projImg8,
       url:urlActual+'#home'
+    },
+    {
+      title: "Primer React Hook Form",
+      description: "Desarrollo de validación con React Hook Form",
+      imgUrl: ReactHook,
+      url:'https://primer-react-hook-form.vercel.app/'
     },
     {
       title: "Seguidor de Gastos ReactJs",
@@ -89,9 +134,11 @@ useEffect(()=>{
               
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
+                      <h5>Total proyectos: {projects.length}</h5><br />
                       <Row>
                         {
-                          projects.map((project, index) => {
+                        
+                          projects.slice(projectoInicio,projectoMostrar).map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
@@ -100,7 +147,16 @@ useEffect(()=>{
                             )
                           })
                         }
+                       
                       </Row>
+                     <Col  size={12} sm={12} md={12}>
+                      <div className="botones_proy">
+                      <button className="btn btn_proy btnmenos" onClick={mostrarProyectosAnteriores}>Menos</button>
+              <button className="btn btn_proy btnmas" onClick={mostrarSiguientesProyectos}>Más</button>
+        
+                    
+                     </div>
+                     </Col>
                     </Tab.Pane>
                   
                   </Tab.Content>
