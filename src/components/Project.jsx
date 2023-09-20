@@ -7,7 +7,7 @@ import projImg4 from "../assets/img/seguidorGastos.png";
 import projImg5 from "../assets/img/PaginaTarea1.png";
 import projImg6 from "../assets/img/tareasPagina2.png";
 import projImg7 from "../assets/img/havc.png";
-import ReactHook from "../assets/img/ReactHookForms.PNG";
+import ReactHook from "../assets/img/ReactHookForms.png";
 import projImg8 from "../assets/img/portafolio.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
