@@ -9,6 +9,7 @@ import projImg6 from "../assets/img/tareasPagina2.png";
 import projImg7 from "../assets/img/havc.png";
 import ReactHook from "../assets/img/ReactHookForms.png";
 import projImg8 from "../assets/img/portafolio.png";
+import pokeApi from "../assets/img/pokeApi.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -79,6 +80,12 @@ const mostrarProyectosAnteriores = () => {
       description: "Diseño y desarrollo de pagina para proyecto de universidad",
       imgUrl: projImg7,
       url:"https://beamish-hummingbird-c1bc88.netlify.app/"
+    },
+    {
+      title: "Api Pokemon ReactJs",
+      description: "Diseño y desarrollo consumiendo API",
+      imgUrl: pokeApi,
+      url:"https://api-pokemon-react.vercel.app/"
     },
     {
       title: "Rick and Morty ReactJs",
