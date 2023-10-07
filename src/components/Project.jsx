@@ -10,6 +10,7 @@ import projImg7 from "../assets/img/havc.png";
 import ReactHook from "../assets/img/ReactHookForms.png";
 import projImg8 from "../assets/img/portafolio.png";
 import pokeApi from "../assets/img/pokeApi.png";
+import projImgM from "../assets/img/tareasMERN.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -68,6 +69,13 @@ const mostrarProyectosAnteriores = () => {
       description: "Diseño y desarrollo de landing page para compañía realizada en AngularJs",
       imgUrl: projImg1,
       url:'https://ornate-zuccutto-819c17.netlify.app/'
+    },
+      {
+      title: "Aplicación FullStack MERN",
+      description: "Diseño y desarrollo frontEnd y BackEnd de aplicación MERN de tareas realizada en ReactJs",
+      imgUrl: projImgM,
+      url:"https://github.com/AndresRojoUG/TareasMERNReactJs"
+     
     },
     {
       title: "Landing page Reactjs",
